@@ -20,7 +20,7 @@ def index():
     db_version = cur.fetchone()
     cur.close()
     conn.close()
-    return f"Hello, Flask! PostgreSQL version: {db_version}"
+    return f"Eae Professor Tarcísio! PostgreSQL version da outra VM é: {db_version}"
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
